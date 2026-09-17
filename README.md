@@ -30,6 +30,51 @@ Every domain may contain three knowledge states:
 - **Tacit:** present in human experience but not adequately expressed.
 - **Emerging:** a candidate pattern that has not yet been validated as durable guidance.
 
+## Quick Start
+
+### 1. Clone the starter
+
+```bash
+git clone https://github.com/heyamberli/ai-marketing-knowledge-base.git
+cd ai-marketing-knowledge-base
+```
+
+You can use the folder directly in a Markdown editor or open it as an Obsidian vault.
+
+### 2. Start with one real marketing task
+
+Open [`templates/task-context.md`](templates/task-context.md) and define:
+
+- the outcome and its checkable success definition;
+- the audience, channel, campaign, or unit affected;
+- the knowledge and evidence required;
+- what the agent may research, draft, recommend, prepare, or change;
+- the decisions that still require human approval.
+
+Do not fill every knowledge domain before starting. Add only what the first task needs.
+
+### 3. Use it with an agent
+
+Open the cloned folder with an agent that can read local Markdown files, such as Codex or Claude Code. Start with:
+
+```text
+Read AGENTS.md and README.md completely.
+
+Help me configure this knowledge base for the following recurring marketing task:
+[describe the task]
+
+Start by helping me complete templates/task-context.md. Identify the smallest
+set of knowledge this task requires, distinguish evidence from assumptions,
+and keep publishing, spending, sending, and durable guidance changes behind
+human approval.
+```
+
+Before allowing the agent to read company files or systems, review their privacy, access, and sharing requirements.
+
+### 4. See a completed example
+
+Use [`examples/campaign-diagnosis/`](examples/campaign-diagnosis/) to see how a goal, a qualified-conversion definition, evidence, uncertainty, and agent permissions fit together.
+
 ## Start With One Task
 
 Do not document everything first.
