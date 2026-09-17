@@ -142,8 +142,10 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 
 ## Status
 
-Version: v0.1  
-Publication: public  
+Version: v0.1
+
+Publication: public
+
 License: [CC BY 4.0](LICENSE.md)
 
 ## Attribution
