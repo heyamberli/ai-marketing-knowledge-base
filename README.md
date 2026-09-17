@@ -1,6 +1,10 @@
-# AI Marketing Knowledge Base Starter
+# AIMKT Marketing Knowledge Base Starter
+
+Created by Amber Li Yang.
 
 A practical Markdown structure for turning marketing context, evidence, decisions, and human judgment into knowledge that people and AI agents can use.
+
+New here? Start with [`START-HERE.md`](START-HERE.md) for agent-guided onboarding.
 
 This starter is designed for marketers who already have documents, data, prompts, and campaign history but need a clearer way to answer:
 
@@ -58,15 +62,10 @@ Do not fill every knowledge domain before starting. Add only what the first task
 Open the cloned folder with an agent that can read local Markdown files, such as Codex or Claude Code. Start with:
 
 ```text
-Read AGENTS.md and README.md completely.
+Read AGENTS.md, START-HERE.md, and README.md completely.
 
-Help me configure this knowledge base for the following recurring marketing task:
-[describe the task]
-
-Start by helping me complete templates/task-context.md. Identify the smallest
-set of knowledge this task requires, distinguish evidence from assumptions,
-and keep publishing, spending, sending, and durable guidance changes behind
-human approval.
+Guide me through setting up my first marketing task.
+Ask one question at a time and do not assume missing business facts.
 ```
 
 Before allowing the agent to read company files or systems, review their privacy, access, and sharing requirements.
@@ -88,8 +87,10 @@ Use the example in [`examples/campaign-diagnosis/`](examples/campaign-diagnosis/
 ```text
 ai-marketing-knowledge-base/
 ├── AGENTS.md
+├── CLAUDE.md
 ├── LICENSE.md
 ├── README.md
+├── START-HERE.md
 ├── knowledge/
 │   ├── 01-business-and-offer.md
 │   ├── 02-customer-and-market.md
@@ -108,6 +109,8 @@ ai-marketing-knowledge-base/
 │   ├── proposed-learning.md
 │   ├── experiment-record.md
 │   └── task-context.md
+├── tasks/
+│   └── README.md
 └── examples/
     └── campaign-diagnosis/
         ├── README.md
@@ -140,7 +143,7 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 ## Status
 
 Version: v0.1  
-Publication: prepared for public release  
+Publication: public  
 License: [CC BY 4.0](LICENSE.md)
 
 ## Attribution
