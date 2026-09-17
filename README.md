@@ -74,6 +74,10 @@ Before allowing the agent to read company files or systems, review their privacy
 
 Use [`examples/campaign-diagnosis/`](examples/campaign-diagnosis/) to see how a goal, a qualified-conversion definition, evidence, uncertainty, and agent permissions fit together.
 
+### 5. Ingest a relevant URL
+
+Once the task is defined, use [`workflows/url-ingest.md`](workflows/url-ingest.md) to turn a specified article, product page, report, or webpage into reviewable candidate knowledge. The workflow separates source claims, observable facts, cited evidence, interpretation, and unknowns before anything is saved.
+
 ## Start With One Task
 
 Do not document everything first.
@@ -108,7 +112,10 @@ ai-marketing-knowledge-base/
 │   ├── decision-record.md
 │   ├── proposed-learning.md
 │   ├── experiment-record.md
+│   ├── url-ingest-review.md
 │   └── task-context.md
+├── workflows/
+│   └── url-ingest.md
 ├── tasks/
 │   └── README.md
 └── examples/
@@ -142,7 +149,7 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 
 ## Status
 
-Version: v0.1
+Version: v0.2
 
 Publication: public
 

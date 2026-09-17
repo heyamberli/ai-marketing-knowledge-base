@@ -34,6 +34,31 @@ After the task context is confirmed, help the user add knowledge incrementally:
 - record durable changes only after explicit human approval;
 - stop onboarding once the user has a usable first task and next action.
 
+## URL Ingest
+
+When a user asks to ingest, import, analyze, or learn from a URL, follow [`workflows/url-ingest.md`](workflows/url-ingest.md).
+
+The ingest output is a reviewable proposal, not automatically trusted knowledge.
+
+Required behavior:
+
+1. Establish which current task or decision the source is meant to support. If there is no current task, ask the user to name the intended use before extracting broadly.
+2. Process only the specified URL unless the user explicitly authorizes a broader crawl.
+3. Capture provenance and freshness: URL, title, author or publisher when available, source type, publication or update date, and access date.
+4. Separate source claims, directly observable facts, cited evidence, agent interpretation, and unknowns.
+5. Map only task-relevant material to the smallest applicable subset of the seven knowledge domains.
+6. Identify conflicts with existing knowledge, missing evidence, scope limitations, and claims that require independent verification.
+7. Present proposed knowledge objects for review before saving them.
+8. Save approved output under `tasks/<task-slug>/sources/` using [`templates/url-ingest-review.md`](templates/url-ingest-review.md). Keep extracted patterns `raw` or `proposed` unless a human explicitly approves a different status.
+
+Do not:
+
+- treat a company, founder, or author claim as independently verified evidence;
+- reproduce substantial copyrighted text when a concise summary is sufficient;
+- bypass access controls, logins, paywalls, robots restrictions, or privacy boundaries;
+- ingest unrelated pages merely because they share a domain;
+- promote an inference or repeated claim into active guidance without human approval.
+
 ## Required Behavior
 
 - Retrieve the smallest relevant knowledge set for the current task.

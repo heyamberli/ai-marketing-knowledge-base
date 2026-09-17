@@ -6,6 +6,7 @@ For each recurring task, create:
 
 ```text
 tasks/<task-slug>/task-context.md
+tasks/<task-slug>/sources/
 ```
 
 Copy [`../templates/task-context.md`](../templates/task-context.md) rather than editing the template itself.
@@ -14,3 +15,4 @@ Add supporting notes only when they are required for the task. Do not treat task
 
 If the work reveals a reusable pattern, record it with [`../templates/proposed-learning.md`](../templates/proposed-learning.md) and keep it `proposed` until a human approves it.
 
+When a URL supports the task, follow [`../workflows/url-ingest.md`](../workflows/url-ingest.md) and store the approved review under the task's `sources/` folder. Ingested material remains a source record or proposed knowledge until human review changes its status.

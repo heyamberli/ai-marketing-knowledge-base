@@ -56,9 +56,23 @@ Not every task needs all seven domains.
 
 The objective is not to complete a knowledge base. It is to make the smallest useful set of knowledge available for a real marketing decision—and improve it as the work produces better evidence.
 
+## Add Knowledge From a URL
+
+After a task has been defined, you can give the agent an article, product page, report, or other public URL:
+
+```text
+Ingest this URL for my current task:
+[URL]
+
+Extract only knowledge relevant to the task. Separate source claims,
+observable facts, cited evidence, interpretation, and unknowns. Show me the
+proposed knowledge objects and save location before writing anything.
+```
+
+The agent should follow [`workflows/url-ingest.md`](workflows/url-ingest.md). A URL does not become trusted knowledge merely because it has been ingested.
+
 ## Prefer to Explore First?
 
 - Read [`README.md`](README.md) for the complete model.
 - Open [`examples/campaign-diagnosis/`](examples/campaign-diagnosis/) for a fictional end-to-end example.
 - Review [`governance/`](governance/) for evidence, status, and approval rules.
-
