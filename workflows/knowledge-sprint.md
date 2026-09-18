@@ -63,3 +63,6 @@ Return:
 
 Ask the user to react to the proposal. If a question is necessary, make it concrete and attach it to the artifact—for example, “I proposed these five sources for trend discovery; which would you remove?” rather than “Where do you find trends?”
 
+## 6. Start the Learning Baseline
+
+If this is recurring work, create the first run record from [`../templates/task-run.md`](../templates/task-run.md) and follow [`task-learning-loop.md`](task-learning-loop.md). Maintain it from the work already performed; do not ask the user to reconstruct the session or score the agent.

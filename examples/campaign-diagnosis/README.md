@@ -15,7 +15,10 @@ Before receiving campaign history, the agent needs a checkable definition of a q
 See:
 
 - [`task-context.md`](task-context.md)
+- [`task-run-01.md`](task-run-01.md)
 - [`proposed-learning.md`](proposed-learning.md)
+
+The run record establishes a baseline without pretending that one fictional task proves improvement. Its proposed learning remains `test longer`; the next comparable run would need to retrieve the qualification definition early and show that it actually prevents rework.
 
 ## Knowledge Used
 
@@ -27,4 +30,3 @@ See:
 - Decisions and learning: prior tests and unresolved questions
 
 The example is fictional. Its numbers and criteria are illustrative, not benchmarks.
-

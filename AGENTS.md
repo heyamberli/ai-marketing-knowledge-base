@@ -51,6 +51,7 @@ Then follow this sequence:
 5. Research accessible sources, inspect existing materials, and propose the minimum relevant knowledge before asking the user to supply more.
 6. Present the provisional task context, knowledge map, completed research action, important unknowns, and recommended next action together.
 7. Ask for correction or approval of the work produced—not for the user to build the missing system unaided.
+8. For recurring work, create a lightweight run record using [`templates/task-run.md`](templates/task-run.md). Maintain it from the work and conversation; do not ask the user to fill it in.
 
 Use [`START-HERE.md`](START-HERE.md) as the human-facing entry point and [`templates/task-context.md`](templates/task-context.md) as the schema. Do not invent business facts to complete an empty field. Mark them as unknown; ask only when an answer is genuinely blocking and cannot be researched or safely proposed.
 
@@ -143,3 +144,16 @@ observed trace
 ```
 
 Record unapproved patterns with [`templates/proposed-learning.md`](templates/proposed-learning.md).
+
+## Compounding Task Loop
+
+For recurring tasks, follow [`workflows/task-learning-loop.md`](workflows/task-learning-loop.md). The purpose is to test whether accumulated knowledge makes later runs more useful—not merely whether more files have been created.
+
+- At the start of a run, retrieve the task context, relevant active knowledge, and the latest comparable run. Record a small baseline before substantial work begins.
+- During the run, note reused knowledge, material user corrections, overrides, missing context, and outcome evidence as they naturally appear.
+- At handoff, update the run record yourself. Do not turn the record into a retrospective questionnaire.
+- Separate **work performance** from **business performance**. A draft can require less correction even when its traffic result remains unknown or disappointing.
+- Compare like with like. Do not claim improvement from unrelated tasks, channels, or deliverable types.
+- Treat fewer questions, faster useful output, lower correction burden, and correct knowledge reuse as learning signals—not automatic proof of quality.
+- Convert repeated or consequential corrections into proposed learning. Only human-approved learning may alter active guidance.
+- When no reliable comparison exists, say `baseline only`; never manufacture an improvement claim.

@@ -121,10 +121,12 @@ ai-marketing-knowledge-base/
 │   ├── decision-record.md
 │   ├── proposed-learning.md
 │   ├── experiment-record.md
+│   ├── task-run.md
 │   ├── url-ingest-review.md
 │   └── task-context.md
 ├── workflows/
 │   ├── knowledge-sprint.md
+│   ├── task-learning-loop.md
 │   └── url-ingest.md
 ├── tasks/
 │   └── README.md
@@ -132,6 +134,7 @@ ai-marketing-knowledge-base/
     └── campaign-diagnosis/
         ├── README.md
         ├── task-context.md
+        ├── task-run-01.md
         └── proposed-learning.md
 ```
 
@@ -141,9 +144,23 @@ ai-marketing-knowledge-base/
 2. Fill only the relevant knowledge domains.
 3. Record sources, dates, scope, confidence, and status for consequential claims.
 4. Tell the agent what it may do and where human approval is required.
-5. Run the task and record misunderstandings, corrections, and outcomes.
-6. Save new patterns as proposed learning.
-7. Promote a pattern into active guidance only after a human validates it.
+5. Let the agent maintain a lightweight run record while doing the task.
+6. Compare later runs using setup burden, correction burden, useful knowledge reuse, and time to useful output.
+7. Save reusable patterns as proposed learning.
+8. Promote a pattern into active guidance only after a human validates it.
+
+## How the System Gets Better
+
+For recurring work, use [`workflows/task-learning-loop.md`](workflows/task-learning-loop.md). Each run gets a small agent-maintained record under `tasks/<task-slug>/runs/`.
+
+The comparison keeps two kinds of evidence separate:
+
+- **Work performance:** how quickly useful work appeared, how much setup and correction it required, and which prior knowledge was reused.
+- **Business performance:** the task-specific result, such as impressions, clicks, qualified leads, or revenue.
+
+A later run is not better merely because it produced a higher business metric, and a larger knowledge base is not proof of learning. Improvement should be visible in comparable work: fewer repeated explanations, fewer material corrections, faster useful output, or more accurate reuse of approved knowledge.
+
+The first run establishes a baseline. Later comparable runs may be classified as `improved`, `mixed`, `unchanged`, `regressed`, or `insufficient evidence`. Candidate patterns remain proposed until a human approves them.
 
 ## What This Starter Does Not Do
 
@@ -159,7 +176,7 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 
 ## Status
 
-Version: v0.4
+Version: v0.5
 
 Publication: public
 

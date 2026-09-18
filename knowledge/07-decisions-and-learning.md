@@ -25,3 +25,4 @@ Use this domain to preserve what the program has decided, learned, changed, reje
 
 Do not silently promote an AI-generated interpretation into active guidance. Preserve the proposed state and the human decision.
 
+Task run records are evidence, not durable guidance. Use comparable runs to test whether approved knowledge reduces repeated explanation, correction, or rework. Keep business outcomes separate from work-quality evidence, and record important alternative explanations before claiming that the system improved.
