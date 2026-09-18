@@ -101,6 +101,7 @@ Use the example in [`examples/campaign-diagnosis/`](examples/campaign-diagnosis/
 ai-marketing-knowledge-base/
 ├── AGENTS.md
 ├── CLAUDE.md
+├── CONTRIBUTING.md
 ├── LICENSE.md
 ├── README.md
 ├── START-HERE.md
@@ -174,9 +175,15 @@ The first run establishes a baseline. Later comparable runs may be classified as
 
 The files are plain Markdown. They can be used as a normal folder, an Obsidian vault, or a version-controlled repository with an AI coding or knowledge agent that can read local files.
 
+## Feedback and Contributions
+
+Feedback from real marketing tasks is welcome—especially confusing behavior, failure cases, material corrections, and examples of knowledge that did or did not help a later run.
+
+Please use the GitHub Issue templates and remove private or identifying information before posting. Changes to the core framework are reviewed selectively while the model is evolving; substantial pull requests should begin with an Issue. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the current contribution policy.
+
 ## Status
 
-Version: v0.5
+Version: v0.5.1
 
 Publication: public
 
