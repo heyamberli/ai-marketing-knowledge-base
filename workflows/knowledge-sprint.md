@@ -59,7 +59,8 @@ Return:
 2. the minimum knowledge map;
 3. the useful work already completed;
 4. the most important uncertainty;
-5. one recommended next action.
+5. one recommended next action;
+6. a concise knowledge handoff following [`knowledge-handoff.md`](knowledge-handoff.md): what was recorded for the task, what may deserve durable retention, what remains provisional, and the exact approval requested.
 
 Ask the user to react to the proposal. If a question is necessary, make it concrete and attach it to the artifact—for example, “I proposed these five sources for trend discovery; which would you remove?” rather than “Where do you find trends?”
 

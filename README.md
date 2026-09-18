@@ -126,6 +126,7 @@ ai-marketing-knowledge-base/
 │   ├── url-ingest-review.md
 │   └── task-context.md
 ├── workflows/
+│   ├── knowledge-handoff.md
 │   ├── knowledge-sprint.md
 │   ├── task-learning-loop.md
 │   └── url-ingest.md
@@ -147,8 +148,9 @@ ai-marketing-knowledge-base/
 4. Tell the agent what it may do and where human approval is required.
 5. Let the agent maintain a lightweight run record while doing the task.
 6. Compare later runs using setup burden, correction burden, useful knowledge reuse, and time to useful output.
-7. Save reusable patterns as proposed learning.
-8. Promote a pattern into active guidance only after a human validates it.
+7. Expect the agent to proactively show a knowledge handoff and propose meaningful candidates for retention.
+8. Approve, narrow, test longer, or reject each durable-knowledge proposal.
+9. Promote a candidate into active guidance only after a human validates it.
 
 ## How the System Gets Better
 
@@ -162,6 +164,8 @@ The comparison keeps two kinds of evidence separate:
 A later run is not better merely because it produced a higher business metric, and a larger knowledge base is not proof of learning. Improvement should be visible in comparable work: fewer repeated explanations, fewer material corrections, faster useful output, or more accurate reuse of approved knowledge.
 
 The first run establishes a baseline. Later comparable runs may be classified as `improved`, `mixed`, `unchanged`, `regressed`, or `insufficient evidence`. Candidate patterns remain proposed until a human approves them.
+
+At every meaningful handoff, the agent should make knowledge changes visible: what was recorded for the task, what it recommends retaining more durably, what remains provisional, and which exact files would change. See [`workflows/knowledge-handoff.md`](workflows/knowledge-handoff.md). The user should not have to ask whether the knowledge base changed.
 
 ## What This Starter Does Not Do
 
@@ -183,7 +187,7 @@ Please use the GitHub Issue templates and remove private or identifying informat
 
 ## Status
 
-Version: v0.5.1
+Version: v0.5.2
 
 Publication: public
 

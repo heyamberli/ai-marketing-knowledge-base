@@ -47,6 +47,8 @@ compared_with:
 
 - Task history worth retaining:
 - Candidate reusable learning:
+- Proposed statement, scope, status, and destination:
 - Proposed-learning file:
 - Human decision: pending / approved / narrowed / test longer / rejected
+- Files updated after decision:
 - What the next comparable run should retrieve or test:

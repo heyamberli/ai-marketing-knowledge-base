@@ -28,7 +28,8 @@ The agent should help you:
 4. research or propose what it can before asking you for more information;
 5. distinguish observed, proposed, unknown, and judgment-dependent knowledge;
 6. complete one useful piece of work so you have something concrete to review.
-7. for recurring work, quietly maintain a run record so later work can be compared with the first baseline.
+7. for recurring work, quietly maintain a run record so later work can be compared with the first baseline;
+8. proactively show what knowledge was recorded and propose any meaningful candidate for your approval before it becomes durable guidance.
 
 ## What the Agent May Need to Clarify
 
@@ -60,6 +61,8 @@ Not every task needs all seven domains.
 The objective is not to complete a knowledge base. It is to make the smallest useful set of knowledge available for a real marketing decision—and improve it as the work produces better evidence.
 
 For a recurring task, the agent should also follow [`workflows/task-learning-loop.md`](workflows/task-learning-loop.md). You should not be asked to fill in an evaluation form. The agent records useful knowledge reuse and material corrections from the work itself, then brings any reusable learning to you for approval.
+
+You should not have to ask whether the knowledge base changed. After meaningful work, the agent should provide a short knowledge handoff following [`workflows/knowledge-handoff.md`](workflows/knowledge-handoff.md), including the exact proposed destination and a clear choice to approve, narrow, test longer, or reject.
 
 ## Add Knowledge From a URL
 

@@ -67,9 +67,11 @@ At the end of the run:
 
 1. identify the most consequential correction, successful reuse, or unresolved gap;
 2. decide whether it is task-specific history or a potentially reusable pattern;
-3. if reusable, create a proposal from [`../templates/proposed-learning.md`](../templates/proposed-learning.md);
-4. show the proposal to the user with its evidence and intended scope;
-5. update active knowledge only after explicit approval;
-6. in the next comparable run, retrieve the approved learning and record whether it actually helped.
+3. provide the default handoff in [`knowledge-handoff.md`](knowledge-handoff.md); do not wait for the user to ask what was learned;
+4. if reusable, create a proposal from [`../templates/proposed-learning.md`](../templates/proposed-learning.md);
+5. show the proposal to the user with its evidence, intended scope, status, and destination;
+6. ask the user to approve, narrow, test longer, or reject it;
+7. update active knowledge only after explicit approval;
+8. in the next comparable run, retrieve the approved learning and record whether it actually helped.
 
-One run can suggest a learning. Repetition or strong evidence is normally needed before treating it as durable guidance.
+One run can and should suggest a meaningful candidate. Repetition or strong evidence may justify higher confidence or active guidance, but it is not a prerequisite for proposing the candidate to the user.

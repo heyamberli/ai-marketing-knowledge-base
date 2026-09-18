@@ -145,13 +145,27 @@ observed trace
 
 Record unapproved patterns with [`templates/proposed-learning.md`](templates/proposed-learning.md).
 
+## Default Knowledge Handoff
+
+When a task or conversation produces meaningful knowledge, do not leave the user to notice or request the update. Follow [`workflows/knowledge-handoff.md`](workflows/knowledge-handoff.md) by default.
+
+Meaningful knowledge includes a user-confirmed fact, preference, decision, correction, exception, evidence-backed observation, or reusable working rule that is likely to affect future work.
+
+- Proactively identify the candidate and explain why it may be worth retaining.
+- Show the proposed statement, scope, evidence or source, status, and exact destination before writing it into durable knowledge.
+- Ask the user to approve, narrow, test longer, or reject the proposal.
+- Do not require repeated runs before proposing a candidate. Repetition affects confidence and the recommended status; it does not remove the duty to surface the candidate.
+- Do not silently promote a candidate into active knowledge.
+- Batch related candidates into a concise handoff. Do not interrupt the work for every minor fact or create proposals from incidental conversation.
+- If no meaningful candidate emerged, say so briefly and explain why.
+
 ## Compounding Task Loop
 
 For recurring tasks, follow [`workflows/task-learning-loop.md`](workflows/task-learning-loop.md). The purpose is to test whether accumulated knowledge makes later runs more useful—not merely whether more files have been created.
 
 - At the start of a run, retrieve the task context, relevant active knowledge, and the latest comparable run. Record a small baseline before substantial work begins.
 - During the run, note reused knowledge, material user corrections, overrides, missing context, and outcome evidence as they naturally appear.
-- At handoff, update the run record yourself. Do not turn the record into a retrospective questionnaire.
+- At handoff, update the run record yourself and provide the default knowledge handoff. Do not turn the record into a retrospective questionnaire.
 - Separate **work performance** from **business performance**. A draft can require less correction even when its traffic result remains unknown or disappointing.
 - Compare like with like. Do not claim improvement from unrelated tasks, channels, or deliverable types.
 - Treat fewer questions, faster useful output, lower correction burden, and correct knowledge reuse as learning signals—not automatic proof of quality.
