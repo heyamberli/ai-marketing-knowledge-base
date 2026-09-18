@@ -47,7 +47,11 @@ You can use the folder directly in a Markdown editor or open it as an Obsidian v
 
 ### 2. Start with one real marketing task
 
-Open [`templates/task-context.md`](templates/task-context.md) and define:
+Describe the task, its practical scope, and the outcome you want. The agent should create a provisional task context and then run [`workflows/knowledge-sprint.md`](workflows/knowledge-sprint.md).
+
+It should not require you to complete every field before work begins. Missing information should be classified as researchable, safely provisional, dependent on user judgment, or unnecessary for the first action.
+
+The working context may include:
 
 - the outcome and its checkable success definition;
 - the audience, channel, campaign, or unit affected;
@@ -55,7 +59,7 @@ Open [`templates/task-context.md`](templates/task-context.md) and define:
 - what the agent may research, draft, recommend, prepare, or change;
 - the decisions that still require human approval.
 
-Do not fill every knowledge domain before starting. Add only what the first task needs.
+Do not fill every knowledge domain before starting. Add only what the first task needs, and expect the agent to research or propose what it can.
 
 ### 3. Use it with an agent
 
@@ -120,6 +124,7 @@ ai-marketing-knowledge-base/
 │   ├── url-ingest-review.md
 │   └── task-context.md
 ├── workflows/
+│   ├── knowledge-sprint.md
 │   └── url-ingest.md
 ├── tasks/
 │   └── README.md
@@ -154,7 +159,7 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 
 ## Status
 
-Version: v0.3
+Version: v0.4
 
 Publication: public
 

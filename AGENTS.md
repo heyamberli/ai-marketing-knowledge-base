@@ -25,22 +25,36 @@ Do not recite the framework, approval model, or full process in the welcome. Int
 - Do not force a single KPI before understanding the work. A workflow may have a primary outcome, diagnostic measures, and guardrails.
 - Use terms such as `knowledge object`, `evidence state`, and `approval boundary` only after explaining why they matter in the current situation.
 
+### Work-First Rule
+
+The user came for help doing marketing work, not to receive a new research assignment.
+
+- Once the task, scope, and intended outcome are clear enough to act, stop the setup interview.
+- Do not ask the user to assemble lists, inventories, source maps, or documentation that the agent can research or propose.
+- Turn an unanswered question into one of three things: a research action, a provisional assumption, or an explicitly recorded unknown.
+- Research accessible public context and inspect available repository material before asking the user for information.
+- Propose a useful first version and let the user correct it. Do not require the user to design the system from a blank page.
+- Ask the user only when the answer depends on private context or personal judgment, cannot be safely inferred, and would materially change the next action.
+- Never assign “homework” without first doing the portion the agent can do.
+
+Example:
+
+- Do not begin with: “Which sources do you normally use to find trending topics?”
+- Instead: research and propose a starter source stack relevant to the task, explain what each source contributes, mark it `proposed`, and ask the user what is missing or unsuitable.
+
 Then follow this sequence:
 
-1. Ask one focused question at a time. Do not present a long questionnaire unless the user requests it.
-2. Establish the recurring marketing task or decision first.
-3. If the user includes a public URL or domain while describing the task, pause the questionnaire and run the contextual URL intake below before asking the next setup question.
-4. Help the user make the desired outcome checkable. If it cannot yet be measured cleanly, record the best available decision criterion and the uncertainty.
-5. Clarify the affected audience, channel, campaign, market, or business unit.
-6. Identify authoritative inputs, existing evidence, important missing information, and privacy constraints.
-7. Ask what the agent may research, draft, recommend, prepare, or change—and what requires human approval.
-8. Propose the smallest relevant subset of the seven knowledge domains. Explain why each selected domain affects this task.
-9. Create a working copy at `tasks/<task-slug>/task-context.md`. Never overwrite the template.
-10. Summarize the resulting task context, unresolved questions, minimum knowledge plan, and safest next action for confirmation.
+1. Establish the recurring marketing task, practical scope, and intended outcome.
+2. If the user includes a public URL or domain, run the contextual URL intake below before continuing.
+3. Create a provisional working copy at `tasks/<task-slug>/task-context.md`. Never overwrite the template. Mark unresolved fields as provisional or unknown instead of extending the interview.
+4. Immediately run the first knowledge sprint in [`workflows/knowledge-sprint.md`](workflows/knowledge-sprint.md).
+5. Research accessible sources, inspect existing materials, and propose the minimum relevant knowledge before asking the user to supply more.
+6. Present the provisional task context, knowledge map, completed research action, important unknowns, and recommended next action together.
+7. Ask for correction or approval of the work produced—not for the user to build the missing system unaided.
 
-Use [`START-HERE.md`](START-HERE.md) as the human-facing entry point and [`templates/task-context.md`](templates/task-context.md) as the schema. Do not invent business facts to complete an empty field. Mark them as unknown and ask only when they block useful progress.
+Use [`START-HERE.md`](START-HERE.md) as the human-facing entry point and [`templates/task-context.md`](templates/task-context.md) as the schema. Do not invent business facts to complete an empty field. Mark them as unknown; ask only when an answer is genuinely blocking and cannot be researched or safely proposed.
 
-After the task context is confirmed, help the user add knowledge incrementally:
+Build knowledge alongside the task rather than waiting for every task-context field to be confirmed:
 
 - retrieve or request only what the current task needs;
 - convert consequential inputs into knowledge objects when source, scope, freshness, or approval matters;

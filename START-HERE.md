@@ -22,29 +22,29 @@ The agent should read the repository instructions automatically and welcome you 
 
 The agent should help you:
 
-1. define the task and desired outcome;
-2. make success or the decision criterion checkable;
+1. understand the task, scope, and intended outcome;
+2. create a provisional `tasks/<task-slug>/task-context.md` without waiting for every field;
 3. identify the minimum knowledge required;
-4. distinguish evidence, assumptions, unknowns, and proposed learning;
-5. set privacy and approval boundaries;
-6. create `tasks/<task-slug>/task-context.md` for your review.
+4. research or propose what it can before asking you for more information;
+5. distinguish observed, proposed, unknown, and judgment-dependent knowledge;
+6. complete one useful piece of work so you have something concrete to review.
 
-## What the Agent Will Ask About
+## What the Agent May Need to Clarify
 
-The conversation will normally cover:
+The agent may clarify:
 
 - What recurring marketing task or decision are you trying to improve?
 - What would a useful outcome look like?
 - Which audience, campaign, channel, market, or business unit is in scope?
-- What evidence and authoritative sources already exist?
-- What is still unknown or unreliable?
-- What may the agent do, and which actions require your approval?
+- Which private sources it cannot inspect;
+- Which consequential choices depend on your judgment;
+- What actions require your approval.
 
-It should ask only the questions needed for your task, one at a time.
+It should research and propose answers wherever possible. It should not ask you to build source lists, taxonomies, or workflows from scratch before it begins helping.
 
 ## What Happens Next
 
-After you approve the task context, the agent will propose a minimum knowledge plan across the relevant domains:
+Once the basic task is clear, the agent should create a provisional context and immediately run a first knowledge sprint across the relevant domains:
 
 1. Business and offer
 2. Customer and market
