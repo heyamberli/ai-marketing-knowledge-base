@@ -1,6 +1,6 @@
 # Welcome to the AIMKT Marketing Knowledge Base Starter
 
-Created by Amber Li Yang.
+Created by Amber Li.
 
 This starter helps you turn scattered marketing context, evidence, decisions, and experience into knowledge that both people and AI agents can use.
 
@@ -10,13 +10,15 @@ Start with one recurring marketing task.
 
 ## Start With an Agent
 
-Open this repository in Codex, Claude Code, or another agent that can read and edit local Markdown files. Then say:
+Open this repository in Codex, Claude Code, or another agent that can read and edit local Markdown files.
+
+A repository cannot send the first chat message by itself, so type this short activation message:
 
 ```text
-Read AGENTS.md, START-HERE.md, and README.md completely.
-Guide me through setting up my first marketing task.
-Ask one question at a time and do not assume missing business facts.
+Start here.
 ```
+
+The agent should read the repository instructions automatically and welcome you into the guided conversation. If your agent does not automatically load repository instructions, use the longer prompt in the README.
 
 The agent should help you:
 
@@ -58,7 +60,9 @@ The objective is not to complete a knowledge base. It is to make the smallest us
 
 ## Add Knowledge From a URL
 
-After a task has been defined, you can give the agent an article, product page, report, or other public URL:
+You can give the agent an article, product page, report, or public website while describing the task. It should first use the page for orientation, then return to the onboarding conversation with better questions.
+
+Once the task is sufficiently clear, you can request a structured ingest:
 
 ```text
 Ingest this URL for my current task:

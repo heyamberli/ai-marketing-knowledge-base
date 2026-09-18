@@ -1,6 +1,6 @@
 # AIMKT Marketing Knowledge Base Starter
 
-Created by Amber Li Yang.
+Created by Amber Li.
 
 A practical Markdown structure for turning marketing context, evidence, decisions, and human judgment into knowledge that people and AI agents can use.
 
@@ -62,10 +62,15 @@ Do not fill every knowledge domain before starting. Add only what the first task
 Open the cloned folder with an agent that can read local Markdown files, such as Codex or Claude Code. Start with:
 
 ```text
-Read AGENTS.md, START-HERE.md, and README.md completely.
+Start here.
+```
 
-Guide me through setting up my first marketing task.
-Ask one question at a time and do not assume missing business facts.
+Repository instructions cannot make an agent speak before the first user turn. This short message activates the guided onboarding. If the agent does not automatically load repository instructions, use:
+
+```text
+Read AGENTS.md, START-HERE.md, and README.md completely. Then guide me
+through setting up my first marketing task. Ask one question at a time and
+do not assume missing business facts.
 ```
 
 Before allowing the agent to read company files or systems, review their privacy, access, and sharing requirements.
@@ -149,7 +154,7 @@ The files are plain Markdown. They can be used as a normal folder, an Obsidian v
 
 ## Status
 
-Version: v0.2
+Version: v0.3
 
 Publication: public
 
@@ -157,4 +162,4 @@ License: [CC BY 4.0](LICENSE.md)
 
 ## Attribution
 
-Created by Amber Li Yang. If you reuse or adapt this starter, please use the attribution provided in [`LICENSE.md`](LICENSE.md).
+Created by Amber Li. If you reuse or adapt this starter, please use the attribution provided in [`LICENSE.md`](LICENSE.md).

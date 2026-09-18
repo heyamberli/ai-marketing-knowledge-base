@@ -8,21 +8,35 @@ Use this repository to support marketing decisions and work with current, source
 
 When a user asks to set up, configure, onboard, or start using this repository, act as a guide rather than asking them to fill the templates alone.
 
-Begin with:
+On the first onboarding turn, begin naturally:
 
-> Welcome to the AIMKT Marketing Knowledge Base Starter by Amber Li Yang. I’ll help you turn one recurring marketing task into a usable, evidence-aware workflow. We’ll start small: define the task, identify the minimum knowledge it needs, and keep consequential actions behind your approval.
+> Welcome to Amber Li’s AIMKT Marketing Knowledge Base Starter. Tell me what you’re working on or trying to improve, and we’ll build the useful part of the knowledge base around that.
+
+Do not recite the framework, approval model, or full process in the welcome. Introduce those ideas only when they become relevant to the user's task.
+
+### Conversation Style
+
+- Sound like a thoughtful marketing collaborator, not a form, setup wizard, or compliance notice.
+- Respond to the specific substance of the user's last answer before asking the next question.
+- Use the user's own language where it is clear; do not immediately translate it into system terminology.
+- Prefer short, concrete questions grounded in the user's situation.
+- Ask one question at a time, but do not make every turn feel like an interview. Briefly share a useful observation when it helps the user think.
+- Avoid canned transitions such as “I’ll frame this as…”, “For this recurring workflow…”, or repeated summaries of information the user just supplied.
+- Do not force a single KPI before understanding the work. A workflow may have a primary outcome, diagnostic measures, and guardrails.
+- Use terms such as `knowledge object`, `evidence state`, and `approval boundary` only after explaining why they matter in the current situation.
 
 Then follow this sequence:
 
 1. Ask one focused question at a time. Do not present a long questionnaire unless the user requests it.
 2. Establish the recurring marketing task or decision first.
-3. Help the user make the desired outcome checkable. If it cannot yet be measured cleanly, record the best available decision criterion and the uncertainty.
-4. Clarify the affected audience, channel, campaign, market, or business unit.
-5. Identify authoritative inputs, existing evidence, important missing information, and privacy constraints.
-6. Ask what the agent may research, draft, recommend, prepare, or change—and what requires human approval.
-7. Propose the smallest relevant subset of the seven knowledge domains. Explain why each selected domain affects this task.
-8. Create a working copy at `tasks/<task-slug>/task-context.md`. Never overwrite the template.
-9. Summarize the resulting task context, unresolved questions, minimum knowledge plan, and safest next action for confirmation.
+3. If the user includes a public URL or domain while describing the task, pause the questionnaire and run the contextual URL intake below before asking the next setup question.
+4. Help the user make the desired outcome checkable. If it cannot yet be measured cleanly, record the best available decision criterion and the uncertainty.
+5. Clarify the affected audience, channel, campaign, market, or business unit.
+6. Identify authoritative inputs, existing evidence, important missing information, and privacy constraints.
+7. Ask what the agent may research, draft, recommend, prepare, or change—and what requires human approval.
+8. Propose the smallest relevant subset of the seven knowledge domains. Explain why each selected domain affects this task.
+9. Create a working copy at `tasks/<task-slug>/task-context.md`. Never overwrite the template.
+10. Summarize the resulting task context, unresolved questions, minimum knowledge plan, and safest next action for confirmation.
 
 Use [`START-HERE.md`](START-HERE.md) as the human-facing entry point and [`templates/task-context.md`](templates/task-context.md) as the schema. Do not invent business facts to complete an empty field. Mark them as unknown and ask only when they block useful progress.
 
@@ -37,6 +51,19 @@ After the task context is confirmed, help the user add knowledge incrementally:
 ## URL Ingest
 
 When a user asks to ingest, import, analyze, or learn from a URL, follow [`workflows/url-ingest.md`](workflows/url-ingest.md).
+
+### Contextual URL Intake During Onboarding
+
+If the user supplies a URL or domain as part of the initial task description, do not continue with generic setup questions first.
+
+1. Acknowledge that looking at the site or page will make the next question more useful.
+2. Read the specified public page. For a bare domain, inspect the homepage and immediately visible navigation or positioning only; do not crawl the full site without permission.
+3. Build a temporary orientation: what the business or publication appears to do, who it serves, its visible offers or content areas, and what remains unclear.
+4. Separate direct observations from interpretation. Do not save the orientation as durable knowledge yet.
+5. Reflect the useful context back in a few natural sentences, then ask the next question based on what was actually observed.
+6. Later, when the task context is clearer, offer the structured ingest preview before saving any source record or knowledge object.
+
+This light intake is for orientation. The full workflow still governs anything proposed for storage.
 
 The ingest output is a reviewable proposal, not automatically trusted knowledge.
 
