@@ -39,8 +39,8 @@ Every domain may contain three knowledge states:
 ### 1. Clone the starter
 
 ```bash
-git clone https://github.com/heyamberli/ai-marketing-knowledge-base.git
-cd ai-marketing-knowledge-base
+git clone https://github.com/heyamberli/ai-marketing-knowledge-system.git
+cd ai-marketing-knowledge-system
 ```
 
 You can use the folder directly in a Markdown editor or open it as an Obsidian vault.
