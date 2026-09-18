@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for testing the AIMKT Marketing Knowledge Base Starter.
+Thank you for testing the AI Marketing Knowledge System Starter.
 
 The most useful contribution at this stage is evidence from real marketing work: where the starter helped, where it failed, what the agent misunderstood, and what still required human judgment.
 

@@ -1,4 +1,4 @@
-# AIMKT Marketing Knowledge Base Starter
+# AI Marketing Knowledge System Starter
 
 Created by Amber Li.
 
@@ -187,7 +187,7 @@ Please use the GitHub Issue templates and remove private or identifying informat
 
 ## Status
 
-Version: v0.5.2
+Version: v0.5.3
 
 Publication: public
 

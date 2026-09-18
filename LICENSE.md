@@ -12,4 +12,4 @@ https://creativecommons.org/licenses/by/4.0/legalcode
 
 Suggested attribution:
 
-> AIMKT Marketing Knowledge Base Starter by Amber Li, licensed under CC BY 4.0.
+> AI Marketing Knowledge System Starter by Amber Li, licensed under CC BY 4.0.

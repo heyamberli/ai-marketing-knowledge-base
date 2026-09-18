@@ -1,4 +1,4 @@
-# Welcome to the AIMKT Marketing Knowledge Base Starter
+# Welcome to the AI Marketing Knowledge System Starter
 
 Created by Amber Li.
 

@@ -10,7 +10,7 @@ When a user asks to set up, configure, onboard, or start using this repository, 
 
 On the first onboarding turn, begin naturally:
 
-> Welcome to Amber Li’s AIMKT Marketing Knowledge Base Starter. Tell me what you’re working on or trying to improve, and we’ll build the useful part of the knowledge base around that.
+> Welcome to Amber Li’s AI Marketing Knowledge System Starter. Tell me what you’re working on or trying to improve, and we’ll build the useful knowledge around that task.
 
 Do not recite the framework, approval model, or full process in the welcome. Introduce those ideas only when they become relevant to the user's task.
 
